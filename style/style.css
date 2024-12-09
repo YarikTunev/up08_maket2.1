@@ -1,0 +1,604 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Nunito_Sans;
+    src: url("../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/San\ Francisco\ Pro\ Display/SF-Pro-Display-Black.otf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #282A30;
+}
+.button-red{
+    display: flex;
+    color: white;
+    font-size: 22px;
+    width: max-content;
+    height: 78px;
+    padding: 0 70px;
+    background: #F7515C;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.conteiner{
+    width: 1440px;
+    margin: 0 auto;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    letter-spacing: 1px;
+    font-family: Nunito_Sans;
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+nav{
+    padding-top: 70px;
+}
+nav .headerimg{
+    width: 127px;
+    display: flex;
+    gap: 85px;
+    align-items: center;
+}
+.Corzina{
+    width: 18px;
+    height: 21.49px;
+}
+.Poisk{
+    width: 27px;
+    height: 29.02px;
+}
+nav h2{
+    width: 150px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-family: "SF Pro Display";
+}
+
+/*бургер*/
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #282A30;
+    transition: all 0.3s ease;
+}
+.actime .line:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.actime .line:nth-child(2){
+    opacity: 0;
+}
+.actime .line:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+.home{
+    margin-top: 82px;
+    margin-bottom: 315px;
+    display: flex;
+}
+.home .redrec{
+    height: 264px;
+}
+.home .block1{
+    background: url(../Img/setka.png);
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    padding-top: 116px;
+    padding-left: 69px;
+
+}
+.home .block1 p{
+    font-size: 20px;
+    color:#F7515C;
+    font-family: Poppins;
+}
+.home .block1 h1{
+    line-height: 77px;
+    font-size: 55px;
+    color: #282A30;
+    font-family: Montserrat;
+    margin-top: 36px;
+    margin-bottom: -18px;
+}
+.home .block1 .btn{
+    display: flex;
+    align-items: center;
+}
+.home .btn a{
+    margin-top: 45px;
+}
+.play {
+    margin-left: 67px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.play img {
+    box-shadow: 1px 1px 5px 1px rgba(141, 141, 141, 0.2);
+    border-radius: 50%;
+}
+
+.home .block2{
+    margin-left: 91px; 
+}
+.Inter{
+    height: 766px; 
+    background-size: cover; 
+    position: absolute;
+}
+
+
+.about{
+    display: flex;
+    margin-left: 100px;
+    width: 1240px;
+}
+.about .block2{
+    padding-left: 38px;
+}
+.about .block2 h3{
+    font-size: 60px;
+    margin-top: 149px;
+    letter-spacing: 4px;
+}
+.about .block2 h2{
+    font-family: Montserrat;
+    color: white;
+    -webkit-text-stroke: 2px #282A30;
+    font-size: 100px;
+    margin-top: -5px;
+}
+.about .block2 p{
+    font-size: 22px;
+    color: #B5B5B7;
+    line-height: 50px;
+    margin-top: 44px;
+    margin-bottom: 37px;
+}
+
+
+
+.furniture{
+    width: 1240px;
+    margin-top: 211px;
+}
+.furniture .block1 {
+    padding-left: 114px;
+}
+.furniture .block1 h3{
+    font-family: Montserrat;
+    font-size: 40px;
+}
+.furniture .block1 h2{
+    font-family: Montserrat;
+    color: white;
+    -webkit-text-stroke: 2px #282A30;
+    font-size: 100px;
+}
+.furniture .block2{
+    background: url(../Img/cont3.png) no-repeat center;
+    width: 1280px;
+    height: 868px;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+.furniture .left{
+    padding-right: 40px;
+}
+.furniture .bl{
+    box-shadow: 20px 4px 100px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-left: 43px;
+    gap: 22px;
+    width: 454px;
+    height: 200px;
+    background: white;
+    align-items: center;
+}
+.furniture .blocks .bl img{
+    margin-top: -20px;
+}
+.furniture h3{
+    font-size: 20px;
+    color: #282A30;
+    font-family: Montserrat;
+}
+.furniture p{
+    font-size: 14px;
+    margin-top: 13px;
+    color: rgba(40, 42, 48,0.4);
+}
+.furniture .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product{
+    margin-top: 117px;
+    width: 1240px;
+    margin-left: 100px;
+}
+.product .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product .text h3{
+    font-size: 40px;
+    font-family: Montserrat;
+}
+.product .text h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 2px #282A30 ;
+    font-size: 100px;
+    margin-bottom: 17px;
+}
+.product .down .btn{
+    padding-top: 26px;
+    display: flex;
+    gap: 43px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.product .down{
+    padding-top: 25px;
+}
+.product .down .slider h3{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 17px;
+    font-size: 22px;
+    font-family: Montserrat;
+}
+.product .down .slider p{
+    text-align: center;
+    color: rgba(40, 42, 48, 0.3);
+    font-size: 22px;
+    font-family: Montserrat;
+}
+.product .down .slider .bl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product .down .slider .sl img{
+    height: 312px;
+    width: 278px;
+    margin-bottom: 44px;
+}
+
+
+.TryNow{
+    margin-top: 278px;
+    margin-left: 100px;
+    width: 1240px;
+}
+.TryNow .blocks{
+    display: flex;
+    gap: 226px;
+}
+.TryNow .blocks .block1 .up{
+    padding-top: 150px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 2px #282A30;
+    font-size: 100px;
+}
+.TryNow .blocks .block1 .down{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 100px;
+    margin-bottom: 60px;
+}
+.TryNow .blocks .block1 .btn{
+    font-family: Montserrat;
+    font-size: 26px;
+    display: flex;
+    color: white;
+    width: 243px;
+    height: 90px;
+    background: #F7515C;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu{
+    width: 1240px;
+    margin-top: 143px;
+    margin-left: 100px;
+    margin-bottom: 81px;
+}
+.menu .line{
+    width: 1240px; 
+    height: 2px; 
+    background: black; 
+    margin-bottom: 100px;
+}
+.menu .blocks{
+    height: 220px;
+    display: flex;
+    gap: 189px;
+}
+.menu .blocks .bl{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.menu .blocks .bl h3{
+    font-size: 26px;
+    font-family: "SF Pro Display";
+}
+.menu .blocks .bl a{
+    color:rgba(40, 42, 48,0.4);
+    font-size: 18px;
+    font-family: Montserrat;
+}
+
+
+
+@media(min-width: 375px) and (max-width: 700px ){
+    .conteiner {
+        width: 100%; 
+    }
+    .button-red{
+        font-size: 60%;
+        height: 10%;
+        padding: 5% 5%;
+        width: 40%;
+    }
+    ul {
+        display: none; 
+    }
+    a{
+        font-size: 70%;
+        text-decoration: none;
+        color: #282A30;
+    }
+    nav{
+        flex-direction: column;
+        margin: 20px 0;
+        gap: 20px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+
+    .hamburger{
+        cursor: pointer;
+        display: block;
+        margin: auto 10px;
+    }
+    ul.show-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .home{
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .home .redrec{
+        display: none;
+    }
+    .home .block1{
+        width: 60%;
+        height: 50%;
+        padding-top: 5%;
+        padding-left: 0;
+        margin-bottom: 20%;
+    }
+    .home .block1 p{
+        font-size: 18px;
+    }
+    .home .block1 h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .play{
+        margin-left: 0;
+        gap: 10px;
+    }
+    .home .play img{
+        width: 30%;
+        margin-left: 10%;
+    }
+    .home .block2{
+        width: 40%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .home .block2 img{
+        width: 35%;
+        height: 50%;
+    }
+
+    .about{
+        width: 100%;
+        margin-left: 0;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about .block1{
+        width: 50%;
+    }
+    .about .block2{
+        width: 50%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about .block2 h3{
+        font-size: 100%;
+        margin: 0;
+    }
+    .about .block2 h2{
+        font-size: 35px;
+    }
+    .about .block2 p{
+        margin: 0;
+        font-size: 50%;
+        line-height: 200%;
+    }
+
+    .furniture{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .furniture .block1{
+        padding-left: 0;
+    }
+    .furniture .block1 h3{
+        font-size: 100%;
+    }
+    .furniture .block1 h2{
+        font-size: 240%;
+    }
+    .furniture .block2{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .furniture .bl{
+        width: 95%;
+        height: 20%;
+        padding-left: 5%;
+    }
+    .furniture h3{
+        font-size: 12px;
+    }
+    .furniture p{
+        font-size: 8px;
+    }
+    .furniture .blocks .bl img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .furniture .left{
+        padding: 0;
+    }
+
+    .product{
+        width: 100%;
+        margin-left: 0;
+    }
+    .product .text h3{
+        font-size: 20px;
+    }
+    .product .text h2{
+        font-size: 50px;
+    }
+    .product .btn .leftbtn{
+        margin-left: 20px;
+    }
+    .product .down .slider .sl img{
+        width: 100%;
+    }
+    .product .down .slider h3{
+        font-size: 18px;
+    }
+    .product .down .slider p{
+        font-size: 18px;
+    }
+
+    .TryNow{
+        margin-top: 10%;
+        margin-left:2%;
+        width: 98%;
+    }
+    .TryNow .blocks{
+        gap: 10%;
+    }
+    .TryNow .blocks .block1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TryNow .blocks .block2{
+        width: 60%;
+    }
+    .TryNow .blocks .block1 .up{
+        font-size: 50px;
+        padding: 0;
+    }
+    .TryNow .blocks .block1 .down{
+        font-size: 40px;
+        margin-bottom: 10%;
+    }
+    .TryNow .blocks .block2 img{
+        width: 95%;
+    }
+
+    .menu{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .menu .blocks{
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+    .menu .line{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .menu .blocks .bl h3{
+        font-size: 12px;
+    }
+    .menu .blocks .bl a{
+        font-size: 10px;
+    }
+}
